@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Simple Ruby and RHTML Editor
+Bundle-SymbolicName: info.nfuture.SRRE;singleton:=true
+Bundle-Version: 0.6.0.0
+Bundle-Activator: info.nfuture.srre.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jface.text;bundle-version="3.4.0",
+ org.eclipse.ui.editors;bundle-version="3.4.0",
+ org.eclipse.core.resources;bundle-version="3.4.0",
+ org.eclipse.ui.ide;bundle-version="3.4.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: J2SE-1.5

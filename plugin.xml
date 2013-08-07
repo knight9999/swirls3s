@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="info.nfuture.srre.simple_ruby_editor.SimpleRubyEditor"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            default="false"
+            extensions="rb"
+            icon="icons/ruby.gif"
+            id="swirls3.editor1"
+            name="Simple Ruby Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="info.nfuture.srre.simple_rhtml_editor.SimpleRHTMLEditor"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            default="false"
+            extensions="rhtml,erb,html"
+            icon="icons/rhtml.gif"
+            id="swirls3.editor2"
+            name="Simple RHTML Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.propertyPages">
+      <page
+            class="info.nfuture.srre.propery_page.ProjectPropertyPage"
+            id="swirls3.page2"
+            name="SRRE Plugin"
+            objectClass="org.eclipse.core.resources.IProject">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.ui.decorators">
+      <decorator
+            adaptable="true"
+            class="info.nfuture.srre.propery_page.ProjectLabelDecorator"
+            id="swirls3.decorator1"
+            label="SRRE Project Label"
+            lightweight="true"
+            location="TOP_LEFT"
+            objectClass="org.eclipse.core.resources.IProject"
+            state="true">
+            <description>
+            	SRRE Label Decorator
+            </description>
+      </decorator>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="info.nfuture.srre.simple_yml_editor.SimpleYMLEditor"
+            contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor"
+            default="false"
+            extensions="yml"
+            icon="icons/yml.gif"
+            id="swirls3.editor3"
+            name="Simple YML Editor">
+      </editor>
+   </extension>
+
+</plugin>
